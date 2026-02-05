@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>L3K</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .product {
+      margin-bottom: 70px;
+    }
+
+    .product img {
+      width: 360px;
+      max-width: 100%;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    footer {
+      border-top: 1px solid #000;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  L3K
+</header>
+
+<section>
+  <h2>About</h2>
+  <p><strong>Founder:</strong> 조병근</p>
+
+  <p>
+    L3K is a rework-based clothing brand founded by 조병근.
+    Shaped by experience as a composer and a refined understanding of brand culture,
+    L3K approaches fashion as a form of creative expression rather than mass production.
+  </p>
+
+  <p>
+    Each garment is reconstructed or designed to stand as a one-of-a-kind piece,
+    inspired by street culture, global aesthetics, and sustainable fashion practices.
+    The focus is placed on individuality, raw design language, and narrative value.
+  </p>
+</section>
+
+<section>
+  <h2>Brand Story</h2>
+  <p>
+    L3K began with a simple idea: clothing can carry more meaning than function.
+    Through rework, modification, and intentional imperfection,
+    existing garments are given a new identity.
+  </p>
+
+  <p>
+    Every cut, texture, and detail reflects a balance between chaos and structure.
+    Rather than following trends, L3K builds collections that exist independently,
+    allowing the wearer to connect with the story behind each piece.
+  </p>
+</section>
+
+<section>
+  <h2>Limited Edition</h2>
+  <p>
+    Selected L3K products are released in strictly limited quantities.
+    Once sold out, they will not be reproduced.
+    Each item exists as a standalone statement rather than part of mass circulation.
+  </p>
+</section>
+
+<section>
+  <h2>Products</h2>
+
+  <div class="product">
+    <img src="product1.jpg" alt="White Shirt">
+    <h3>White Shirt</h3>
+    <p>
+      Minimalist white shirt featuring clean tailoring and refined proportions.
+      Designed for versatility while maintaining a sharp silhouette.
+    </p>
+    <p class="price">₩270,000</p>
+  </div>
+
+  <div class="product">
+    <img src="product2.jpg" alt="Arabia Collection">
+    <h3>Arabia Collection</h3>
+    <p>
+      A Middle Eastern–inspired collection expressing bold identity and cultural contrast.
+      Includes visual concepts such as frameless eyewear, beanies,
+      and limited footwear elements.
+    </p>
+    <p class="price">₩670,000</p>
+  </div>
+
+  <div class="product">
+    <img src="product3.jpg" alt="Premium Sleeveless Hoodie">
+    <h3>Premium Sleeveless Hoodie</h3>
+    <p>
+      Original L3K signature sleeveless hoodie.
+      Crafted with premium materials and elevated construction,
+      designed to function as a statement piece.
+    </p>
+    <p class="price">₩730,000</p>
+  </div>
+
+  <div class="product">
+    <img src="product4.jpg" alt="Spray White Shirt">
+    <h3>Spray White Shirt</h3>
+    <p>
+      White shirt finished with raw, hand-applied spray paint.
+      Embraces imperfection, randomness, and spontaneous expression.
+    </p>
+    <p class="price">₩47,000</p>
+  </div>
+
+  <div class="product">
+    <img src="product5.jpg" alt="Reworked Sleeveless Hoodie">
+    <h3>Reworked Sleeveless Hoodie</h3>
+    <p>
+      Upcycled garments in excellent condition,
+      reworked by removing sleeves to form a sleeveless hoodie silhouette.
+      Each piece differs slightly by source material.
+    </p>
+    <p class="price">₩49,000</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Contact details will be updated.</p>
+</section>
+
+<footer>
+  #302, 15, Dosan-daero 16-gil, Gangnam-gu, Seoul, South Korea
+</footer>
+
+</body>
+</html>
