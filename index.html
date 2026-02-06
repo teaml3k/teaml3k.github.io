@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>L3K</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <title>l3k</title>
+  <meta name="description" content="Limited fashion pieces by BK Cho. Reworked garments and signature designs." />
   <style>
     body {
       margin: 0;
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111;
     }
-
     header {
-      padding: 60px 20px;
+      padding: 40px;
       text-align: center;
-      font-size: 36px;
+      font-size: 28px;
       font-weight: bold;
-      letter-spacing: 3px;
+      border-bottom: 1px solid #e5e5e5;
+      letter-spacing: 1px;
     }
-
-    section {
-      max-width: 1100px;
+    .container {
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
-
-    h2 {
-      font-size: 22px;
-      margin-bottom: 25px;
-      border-bottom: 1px solid #000;
-      padding-bottom: 10px;
-    }
-
-    p {
-      line-height: 1.6;
-      font-size: 15px;
-    }
-
     .product {
-      margin-bottom: 70px;
+      margin-bottom: 80px;
     }
-
     .product img {
-      width: 360px;
-      max-width: 100%;
+      width: 100%;
+      max-width: 600px;
       display: block;
+      margin-bottom: 20px;
+    }
+    .product h2 {
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    .price {
+      font-size: 18px;
       margin-bottom: 15px;
     }
-
-    .product h3 {
-      margin: 5px 0;
-      font-size: 18px;
+    .desc {
+      line-height: 1.6;
+      max-width: 700px;
     }
-
-    .price {
-      font-weight: bold;
-      margin-top: 8px;
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 1px solid #111;
+      text-decoration: none;
+      color: #111;
+      font-size: 14px;
     }
-
+    .btn:hover {
+      background: #111;
+      color: #fff;
+    }
+    .about {
+      margin-top: 120px;
+      border-top: 1px solid #e5e5e5;
+      padding-top: 60px;
+      max-width: 800px;
+    }
     footer {
-      border-top: 1px solid #000;
-      text-align: center;
+      margin-top: 120px;
       padding: 40px 20px;
-      font-size: 13px;
+      border-top: 1px solid #e5e5e5;
+      font-size: 14px;
+      color: #555;
+      text-align: center;
     }
   </style>
 </head>
@@ -72,115 +78,75 @@
 <body>
 
 <header>
-  L3K
+  l3k
 </header>
 
-<section>
-  <h2>About</h2>
-  <p><strong>Founder:</strong> 조병근</p>
+<div class="container">
 
-  <p>
-    L3K is a rework-based clothing brand founded by 조병근.
-    Shaped by experience as a composer and a refined understanding of brand culture,
-    L3K approaches fashion as a form of creative expression rather than mass production.
-  </p>
-
-  <p>
-    Each garment is reconstructed or designed to stand as a one-of-a-kind piece,
-    inspired by street culture, global aesthetics, and sustainable fashion practices.
-    The focus is placed on individuality, raw design language, and narrative value.
-  </p>
-</section>
-
-<section>
-  <h2>Brand Story</h2>
-  <p>
-    L3K began with a simple idea: clothing can carry more meaning than function.
-    Through rework, modification, and intentional imperfection,
-    existing garments are given a new identity.
-  </p>
-
-  <p>
-    Every cut, texture, and detail reflects a balance between chaos and structure.
-    Rather than following trends, L3K builds collections that exist independently,
-    allowing the wearer to connect with the story behind each piece.
-  </p>
-</section>
-
-<section>
-  <h2>Limited Edition</h2>
-  <p>
-    Selected L3K products are released in strictly limited quantities.
-    Once sold out, they will not be reproduced.
-    Each item exists as a standalone statement rather than part of mass circulation.
-  </p>
-</section>
-
-<section>
-  <h2>Products</h2>
-
+  <!-- PRODUCT 1 -->
   <div class="product">
-    <img src="product1.jpg" alt="White Shirt">
-    <h3>White Shirt</h3>
-    <p>
-      Minimalist white shirt featuring clean tailoring and refined proportions.
-      Designed for versatility while maintaining a sharp silhouette.
-    </p>
-    <p class="price">₩270,000</p>
+    <img src="hoodie.jpg" alt="Premium Sleeveless Hoodie">
+    <h2>Premium Sleeveless Hoodie</h2>
+    <div class="price">₩730,000</div>
+    <div class="desc">
+      The original signature silhouette of the brand.<br>
+      A sleeveless reinterpretation of a traditional hoodie,
+      designed to break seasonal and stylistic boundaries.<br><br>
+      Produced exclusively in limited quantities.
+    </div>
+    <a href="#" class="btn">Purchase / Private Inquiry</a>
   </div>
 
+  <!-- PRODUCT 2 -->
   <div class="product">
-    <img src="product2.jpg" alt="Arabia Collection">
-    <h3>Arabia Collection</h3>
-    <p>
-      A Middle Eastern–inspired collection expressing bold identity and cultural contrast.
-      Includes visual concepts such as frameless eyewear, beanies,
-      and limited footwear elements.
-    </p>
-    <p class="price">₩670,000</p>
+    <img src="paint.jpg" alt="Paint-Splashed White Piece">
+    <h2>Paint-Splashed White Piece</h2>
+    <div class="price">₩47,000</div>
+    <div class="desc">
+      An unplanned expression captured through spontaneous gestures.<br>
+      No two pieces share the same pattern.<br>
+      Each item exists as a one-of-one result.
+    </div>
   </div>
 
+  <!-- PRODUCT 3 -->
   <div class="product">
-    <img src="product3.jpg" alt="Premium Sleeveless Hoodie">
-    <h3>Premium Sleeveless Hoodie</h3>
-    <p>
-      Original L3K signature sleeveless hoodie.
-      Crafted with premium materials and elevated construction,
-      designed to function as a statement piece.
-    </p>
-    <p class="price">₩730,000</p>
+    <img src="reworked.jpg" alt="Reworked Sleeveless Hoodie">
+    <h2>Reworked Sleeveless Hoodie</h2>
+    <div class="price">₩49,000</div>
+    <div class="desc">
+      A reworked piece constructed from carefully selected pre-owned garments.<br>
+      Deconstructed and rebuilt with priority on concept over function.<br>
+      The past garment is given a new role.
+    </div>
   </div>
 
-  <div class="product">
-    <img src="product4.jpg" alt="Spray White Shirt">
-    <h3>Spray White Shirt</h3>
+  <!-- ABOUT -->
+  <div class="about">
+    <h2>About</h2>
     <p>
-      White shirt finished with raw, hand-applied spray paint.
-      Embraces imperfection, randomness, and spontaneous expression.
+      l3k is less a fashion brand and more a record of decisions,
+      intentions, and creative direction.
     </p>
-    <p class="price">₩47,000</p>
+    <p>
+      Led by composer and creator <strong>BK Cho</strong>,
+      the brand exists at the intersection of music,
+      visual language, and clothing.
+    </p>
+    <p>
+      Ornament is reduced.
+      What remains is structure and intent.<br>
+      Every piece is produced in limited quantities,
+      and repetition is intentionally avoided.
+    </p>
+    <p><strong>All pieces are limited.</strong></p>
   </div>
 
-  <div class="product">
-    <img src="product5.jpg" alt="Reworked Sleeveless Hoodie">
-    <h3>Reworked Sleeveless Hoodie</h3>
-    <p>
-      Upcycled garments in excellent condition,
-      reworked by removing sleeves to form a sleeveless hoodie silhouette.
-      Each piece differs slightly by source material.
-    </p>
-    <p class="price">₩49,000</p>
-  </div>
-
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Contact details will be updated.</p>
-</section>
+</div>
 
 <footer>
-  #302, 15, Dosan-daero 16-gil, Gangnam-gu, Seoul, South Korea
+  #302, 15, Dosan-daero 16-gil,<br>
+  Gangnam-gu, Seoul, South Korea
 </footer>
 
 </body>
