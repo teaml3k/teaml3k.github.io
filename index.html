@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head> 
-
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Studio L3K</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
-overflow:hidden;
+font-family:Arial, sans-serif;
 background:black;
+overflow:hidden;
 }
 
-/* 영상 배경 */
+/* VIDEO BACKGROUND */
 
 #bgvideo{
 position:fixed;
@@ -29,7 +26,21 @@ object-fit:cover;
 z-index:-1;
 }
 
-/* 상단 UI */
+/* CENTER TEXT */
+
+.welcome{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:80px;
+font-weight:800;
+letter-spacing:10px;
+text-align:center;
+}
+
+/* HEADER */
 
 header{
 position:fixed;
@@ -56,7 +67,7 @@ font-weight:bold;
 cursor:pointer;
 }
 
-/* 햄버거 메뉴 */
+/* HAMBURGER MENU */
 
 #menu{
 position:fixed;
@@ -81,58 +92,7 @@ text-decoration:none;
 background:#222;
 }
 
-/* 클릭 영역 */
-
-.link{
-position:absolute;
-cursor:pointer;
-}
-
-/* 영역 위치 (필요하면 조정) */
-
-.l3kstudio{
-bottom:95px;
-left:90px;
-width:300px;
-height:170px;
-}
-
-.l3kfilm{
-bottom:110px;
-left:610px;
-width:260px;
-height:150px;
-}
-
-.youtube{
-bottom:120px;
-left:820px;
-width:120px;
-height:110px;
-}
-
-.applemusic{
-bottom:115px;
-right:520px;
-width:120px;
-height:110px;
-}
-
-.musicstudio{
-bottom:95px;
-right:310px;
-width:480px;
-height:170px;
-}
-
-.arrow{
-bottom:115px;
-right:140px;
-width:120px;
-height:120px;
-}
-
-/* 지원 팝업 */
+/* APPLICATION MODAL */
 
 .modal{
 display:none;
@@ -141,7 +101,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.8);
+background:rgba(0,0,0,0.85);
 justify-content:center;
 align-items:center;
 z-index:30;
@@ -151,8 +111,11 @@ z-index:30;
 background:#111;
 padding:30px;
 width:360px;
+max-width:360px;
 color:white;
 }
+
+/* FORM INPUT */
 
 .modal-box input,
 .modal-box select,
@@ -164,10 +127,13 @@ margin-bottom:12px;
 background:#222;
 border:none;
 color:white;
+resize:none;
+
 }
 
 .modal-box textarea{
 height:80px;
+resize:none;
 }
 
 .modal-box button{
@@ -186,30 +152,18 @@ cursor:pointer;
 font-size:22px;
 }
 
-/* 사운드 버튼 */
-
-#soundToggle{
-position:fixed;
-bottom:20px;
-left:20px;
-z-index:20;
-padding:8px 14px;
-background:white;
-border:none;
-cursor:pointer;
-}
-
 </style>
-
 </head>
 
 <body>
 
-<!-- 영상 배경 -->
+<!-- VIDEO -->
 
 <video autoplay muted loop playsinline id="bgvideo">
 <source src="l3k-video.mp4" type="video/mp4">
 </video>
+
+<!-- HEADER -->
 
 <header>
 
@@ -218,6 +172,8 @@ cursor:pointer;
 <button class="apply-btn" onclick="openApply()">Apply</button>
 
 </header>
+
+<!-- MENU -->
 
 <nav id="menu">
 
@@ -229,21 +185,13 @@ cursor:pointer;
 
 </nav>
 
-<!-- 클릭 영역 -->
+<!-- CENTER TEXT -->
 
-<a class="link l3kstudio" href="l3k-studio.html"></a>
+<div class="welcome">
+WELCOME
+</div>
 
-<a class="link l3kfilm" href="l3k-film.html"></a>
-
-<a class="link youtube" href="https://youtube.com" target="_blank"></a>
-
-<a class="link musicstudio" href="musicstudio.html"></a>
-
-<a class="link applemusic" href="https://music.apple.com" target="_blank"></a>
-
-<a class="link arrow" href="l3k-studio.html"></a>
-
-<!-- 지원 팝업 -->
+<!-- APPLY MODAL -->
 
 <div id="applyModal" class="modal">
 
@@ -257,28 +205,26 @@ cursor:pointer;
 
 <input type="text" name="name" placeholder="Name" required>
 
-<input type="number" name="birth_year" placeholder="Birth Year" required>
+<input type="number" name="birth_year" placeholder="Birth Year (2008-2011)" required>
 
 <select name="gender" required>
-
 <option value="">Gender</option>
 <option>Male</option>
 <option>Female</option>
-
 </select>
 
 <input type="tel" name="phone" placeholder="Phone Number" required>
 
 <input type="tel" name="guardian_phone" placeholder="Guardian Phone Number" required>
 
-<input type="text" name="experience" placeholder="Experience">
+<input type="text" name="experience" placeholder="Experience (optional)">
 
 <textarea name="reason" placeholder="Reason for Applying"></textarea>
 
 <label style="font-size:12px">
 
 <input type="checkbox" required>
-I agree to the collection of personal information
+I agree to the collection of personal information.
 
 </label>
 
@@ -292,11 +238,9 @@ I agree to the collection of personal information
 
 </div>
 
-<button id="soundToggle">Sound</button>
-
 <script>
 
-/* 햄버거 메뉴 */
+/* MENU CONTROL */
 
 let menu = document.getElementById("menu")
 
@@ -310,9 +254,9 @@ menu.style.left="0px"
 
 }
 
-/* 화면 클릭시 메뉴 닫기 */
+/* CLICK OUTSIDE CLOSE */
 
-document.addEventListener("click", function(e){
+document.addEventListener("click",function(e){
 
 if(!menu.contains(e.target) && !e.target.classList.contains("menu-btn")){
 menu.style.left="-260px"
@@ -320,7 +264,7 @@ menu.style.left="-260px"
 
 })
 
-/* 지원 팝업 */
+/* APPLY MODAL */
 
 function openApply(){
 document.getElementById("applyModal").style.display="flex"
@@ -328,23 +272,6 @@ document.getElementById("applyModal").style.display="flex"
 
 function closeApply(){
 document.getElementById("applyModal").style.display="none"
-}
-
-/* 영상 사운드 */
-
-const video = document.getElementById("bgvideo")
-const btn = document.getElementById("soundToggle")
-
-btn.onclick = function(){
-
-video.muted = !video.muted
-
-if(video.muted){
-btn.innerText="Sound"
-}else{
-btn.innerText="Mute"
-}
-
 }
 
 </script>
